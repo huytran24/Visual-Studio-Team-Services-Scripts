@@ -1,6 +1,6 @@
 param([string]$buildRunAsUserPassword = $args[0]) 
 
-Write-Host "=========== CopyToDropsFolder.ps1 started... ==========="
+Write-Host "=========== VSTSCheckin.ps1 started... ==========="
 
 if (-not $buildRunAsUserPassword)
 {
@@ -214,4 +214,4 @@ Write-Host "Checking in $($env:BUILD_BUILDNUMBER).zip ..."
 Invoke-CheckIn -provider $provider -dropFile $dropZipFile
 
 
-Write-Host "=========== CopyToDropsFolder.ps1 completed ==========="
+Write-Host "=========== VSTSCheckIn.ps1 completed ==========="
